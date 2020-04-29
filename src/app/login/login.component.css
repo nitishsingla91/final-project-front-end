@@ -1,0 +1,29 @@
+
+label
+{ 
+color:red;
+}
+#title
+{text-align:center;
+margin-top:30px;
+color:blue;
+}
+hr{
+background-color:white;
+}
+form
+{
+    margin-left: 200px;
+    padding:30px;
+    margin-top:80px;
+    
+}
+#linktag
+{
+    text-align:right;
+}
+button
+{
+margin-left:45%;
+}
+

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+       
+    </head>
+    <body>
+        <div style="text-align: center;">
+
+            <h1>{{ message }}</h1>
+
+        </div>
+        
+        <div id="title" style="text-align: center; color: crimson;"><h3>Registration Form</h3></div>
+            <hr>
+            <div class="container">
+                <div class="row">
+                <div class="col-lg-10">
+            <form action="Register" method="post">
+            
+              <div class="form-group">
+                <label for="firstname">Enter First</label>
+                <input type="text" [(ngModel)]="user.firstname" name="firstname" class="form-control" id="firstname" required placeholder="First Name" >
+                
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">last Name</label>
+                <input type="text" class="form-control" id="lastname" required placeholder="Last Name" [(ngModel)]="user.lastname" name="lastname">
+             </div>
+
+             <div class="form-group">
+                <label for="exampleInputPassword1">Business Unit</label>
+                <input type="text" class="form-control" id="businessunit" required placeholder="business unit" [(ngModel)]="user.businessunit" name="businessunit">
+             </div>
+
+             <div class="form-group">
+                <label for="exampleInputPassword1">Title</label>
+                <input type="text" class="form-control" id="title" required placeholder="title" [(ngModel)]="user.title" name="title"> 
+             </div>
+
+             <div class="form-group">
+                <label for="exampleInputPassword1">Email</label>
+                <input type="email" class="form-control" id="email" required placeholder="Email" [(ngModel)]="user.email" name="email">
+             </div>
+
+             <div class="form-group">
+                <label for="exampleInputPassword1">Telephone</label>
+                <input type="tel" class="form-control" id="telephone" required placeholder="Telephone" [(ngModel)]="user.telephone" name="telephone">
+             </div>
+             <div class="form-group">
+                <label for="exampleInputPassword1">ADD1</label>
+                <input type="text" class="form-control" id="add1" required placeholder="Add1" [(ngModel)]="user.add1" name="add1">
+             </div>
+             <div class="form-group">
+                <label for="exampleInputPassword1">ADD2</label>
+                <input type="text" class="form-control" id="add2" required placeholder="Add2" [(ngModel)]="user.add2" name="add2">
+             </div>
+
+             <div class="form-group">
+                <label for="exampleInputPassword1">City</label>
+                <input type="text" class="form-control" id="city" required placeholder="City" [(ngModel)]="user.city" name="city">
+             </div>
+
+             <div class="form-group">
+                <label for="exampleInputPassword1">State</label>
+                <input type="text" class="form-control" id="state" required placeholder="State" [(ngModel)]="user.state" name="state">
+             </div>
+
+             <div class="form-group">
+                <label for="exampleInputPassword1">Zip</label>
+                <input type="text" class="form-control" id="zip" required placeholder="Zip" [(ngModel)]="user.zip" name="zip">
+             </div>
+
+             <div class="form-group">
+                <label for="country">Country</label>
+                <input type="text" class="form-control" [(ngModel)]="user.country" id="country" required placeholder="Country" name="country"/> 
+             </div>
+
+
+              <button type="submit" class="btn btn-info" (click)="register()">Register</button>
+            </form>
+            </div>
+            </div>
+            </div>
+            
+    </body>
+
+</html>
